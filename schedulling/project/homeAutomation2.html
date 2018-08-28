@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Home Automation</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="jquery.datetimepicker.css" rel="stylesheet">
+	<style type="text/css">
+	h1{
+		text-align: center;
+	}
+	</style>
+	
+  </head>
+  <body>
+  <h1>Home Automation QUT</h1>
+<div class="container">
+	<div class="jumbotron">
+		<h1>Welcome Home!</h1>
+		<p>
+			This is a website that will allow you to control the appliances of your house according to your energy schedule.</p>
+		
+	</div>
+
+
+    <p><br/></p>
+    <div class="container">
+    	<div>
+    		<h3> Washing machine </h3></br>
+    		<form >
+    			<label>start:</label>  <input type="text" id="datetimepicker" name="datentime" required />
+    			<label>Finish:</label>  <input type="text" id="datetimepicker2" name="datentime2" required /> 
+    			<input type="Submit"  onsubmit= "processData1 ('datetimepicker,datetimepicker2') " > <br/><br/>
+    		</form >
+
+    	</div>
+    	<div>
+    		<h3>Dishwasher</h3> </br>
+
+    		<form>
+    			<label>start:</label>  <input type="text" id="datetimepicker3" name="datentime" required/> 
+    			<label>Finish:</label>  <input type="text" id="datetimepicker4" name="datentime2" required /> 
+    			<input type="Submit" > <br/><br/>
+    		</form>
+    			
+    	</div>
+    	<div>
+    		<h3>Air Conditioner </h3></br>
+    		<form>
+    			<label>start:</label><input type="text" id="datetimepicker5" name="datentime" required /> 
+    			<label>Finish:</label>  <input type="text" id="datetimepicker6" name="datentime2" required /> 
+    			<input type="Submit" value = "Submit" onclick= "processData3 ('datetimepicker5,datetimepicker6') " > <br/><br/>
+    		</form >
+
+    	</div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+    <script src="jquery.datetimepicker.full.js"></script>
+    <script >
+    	$("#datetimepicker").datetimepicker();
+    	$("#datetimepicker2").datetimepicker();
+    	$("#datetimepicker3").datetimepicker();
+    	$("#datetimepicker4").datetimepicker();
+    	$("#datetimepicker5").datetimepicker();
+    	$("#datetimepicker6").datetimepicker();
+    </script>
+
+
+
+  </body>
+</html>
