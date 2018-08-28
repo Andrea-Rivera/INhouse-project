@@ -1,1 +1,0 @@
-console.log ("HI this is my first project");

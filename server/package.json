@@ -1,0 +1,24 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Server to control Home Appliances",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "INhouse-project"
+  },
+  "keywords": [
+    "Raspberry",
+    "Pi",
+    "Node",
+    "JS"
+  ],
+  "author": "Andrea Rivera",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
