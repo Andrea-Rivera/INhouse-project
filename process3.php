@@ -7,7 +7,7 @@ $email =  $_POST['email'];
 
  $servername= "localhost";
  $user = "root";
- $password ="NIdiacampitos04";
+ $password ="password";
  $dbname = "schedule"; 
 
  // Creation of connection
